@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="" type="image/icon">
+    <script src="./scripts/script.js"></script>
+    <title>Groove music</title>
 </head>
+
 <body>
-    <audio controls>
-        <source src="./assets/audios/C1T02L01-TEXTO.ogg" type="audio/ogg">
-        <source src="./assets/audios/C1T02L01-TEXTO.mp3" type="audio/mpeg">
-    </audio>
+    <section>
+        <div class="main_container">
+            <header>
+                <div class="header_container">
+                    <img class="icon" src="./assets/icons/round_menu_black.png" alt="">
+                    <span>MY MUSIC</span>
+                    <img class="icon" src="./assets/icons/round_search_black.png" alt="">
+                </div>
+            </header>
+
+            <nav>
+                <div class="nav_options">
+                    <div class="nav_option nav_songs_option">Songs</div>
+                    <div class="nav_option nav_artists_option">Artists</div>
+                    <div class="nav_option nav_album_option">Albums</div>
+                </div>
+
+                <hr>
+            </nav>
+
+            <div class="controls">
+                <div>
+                    Refine: <span class="sort_by">Date added</span><span>,</span> <span class="genre"></span>All
+                    genres</span>
+                    <img class="icon" src="./assets/icons/round_shuffle_black.png" alt=""><span>Shuffle all</span> <span
+                        class="shuffle_number"></span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div>
+                <p>Not finding everything?</p> <span>Show us where to look for music</span>
+            </div>
+
+            <hr>
+
+            <div class="albums_container">
+                <div class="album_placeholder_contianer">
+                    <div class="album_placeholder">
+                        <img src="./assets/icons/round_album_black.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <footer>
+                <audio controls>
+                    <source src="./assets/audios/C1T02L01-TEXTO.ogg" type="audio/ogg">
+                    <source src="./assets/audios/C1T02L01-TEXTO.mp3" type="audio/mpeg">
+                </audio>
+            </footer>
+        </div>
+    </section>
 </body>
+
 </html>
